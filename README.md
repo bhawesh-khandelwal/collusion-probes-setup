@@ -6,7 +6,7 @@ Code, data and results for an Apart Swarm Alignment Sprint submission (Track 4, 
 
 **Question.** Does a learned detector that reads all agents' activations jointly beat per-agent probes combined after the fact, especially for emergent collusion and when each agent looks normal alone?
 
-**Answer.** No. On NARCBench, with Qwen3.8-27B and Gemma 4 31B, group detectors tie the best per-agent probe on instructed collusion and never reliably beat it elsewhere. On 166 new runs where every pair has the same incentive and private channel, and only the outcome differs, every detector (white-box or black-box, per-agent or group) is near chance within a scenario family. The probes detect who was set up to collude, not whether they coordinated.
+**Answer.** No. On NARCBench, with Qwen3.8-27B and Gemma 4 31B, group detectors tie the best per-agent probe on instructed collusion and never reliably beat it elsewhere. On 166 new runs where every pair has the same incentive and private channel, and only the outcome differs, every detector reading the discussion and final turns (white-box or black-box, per-agent or group) is near chance within a scenario family. At the private-channel turns a within-family signal appears (about 0.80), but a bag-of-words classifier on the same messages matches it. The probes detect who was set up to collude, not whether they coordinated.
 
 ## Layout
 
