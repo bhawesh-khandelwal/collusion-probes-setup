@@ -17,7 +17,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt
 
 ROOT = Path(__file__).resolve().parent
-AUTHOR, AFFIL = "Bhawesh", "Independent researcher"
+AUTHOR, AFFIL = "Bhawesh Khandelwal", "Independent researcher"
 
 
 def md_sections():
