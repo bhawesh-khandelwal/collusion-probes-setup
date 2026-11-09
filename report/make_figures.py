@@ -80,12 +80,17 @@ def fig1():
     save(fig, "fig1_setup_vs_coordination")
 
 
+SIG = set()
+
+
 def parse_vs_peak(path):
     rows = {}
     for line in (ROOT / path).read_text().splitlines():
         m = re.match(r"(\S+)\s+(\S+)\s+(\S+)\s+- peak ([+-][\d.]+) \[([+-][\d.]+), ([+-][\d.]+)\]", line)
         if m:
             rows[(m[1], m[2], m[3])] = (float(m[4]), float(m[5]), float(m[6]))
+            if line.rstrip().endswith("*"):  # the log flags significance on unrounded bounds
+                SIG.add((m[1], m[2], m[3]))
     return rows
 
 
@@ -97,14 +102,14 @@ def fig2(vs):
                      ("scores_implicit_discussion.json", "27B disc."), ("scores_implicit_final.json", "27B final")):
         for (ff, tier, m), v in vs.items():
             if ff == f and tier in ("transfer", "implicit", "implicit_coord", "implicit2_coord", "game"):
-                items.append((tier, model, m, v))
+                items.append((tier, model, m, v, (ff, tier, m) in SIG))
     order = {"transfer": 0, "implicit": 1, "implicit_coord": 2, "implicit2_coord": 3, "game": 4}
     items.sort(key=lambda t: (order[t[0]], t[1], t[2]))
     TN = {"transfer": "Instructed", "implicit": "Implicit vs control", "implicit_coord": "Same setup (36)",
           "implicit2_coord": "Same setup (166)", "game": "Pricing game"}
-    rows = sorted({(t, mo) for t, mo, _, _ in items}, key=lambda r: (order[r[0]], r[1]))
+    rows = sorted({(t, mo) for t, mo, _, _, _ in items}, key=lambda r: (order[r[0]], r[1]))
     fig, ax = plt.subplots(figsize=(5.2, 0.24 * len(rows) + 0.9))
-    for t, mo, m, (d, lo, hi) in items:
+    for t, mo, m, (d, lo, hi), _ in items:
         y = len(rows) - rows.index((t, mo)) + (0.17 if m == "set_stats" else -0.17)
         ax.plot([lo, hi], [y, y], color=COL[m], lw=2, solid_capstyle="round")
         ax.plot(d, y, MARK[m], color=COL[m], ms=5, mec=SURF, mew=1)
@@ -167,8 +172,8 @@ def tables(items):
             lines.append(f"| {model} | {lab.replace(chr(10), ' ')} | " + " | ".join(cells) + " |")
     lines += ["", "## Table 2. Group minus Peak Suspicion [95% CI]", "", "| Test set | Model, read | Method | Difference |",
               "|---|---|---|---|"]
-    for tier, model, m, (d, lo, hi) in items:
-        star = " *" if lo > 0 or hi < 0 else ""
+    for tier, model, m, (d, lo, hi), sig in items:
+        star = " *" if sig else ""
         lines.append(f"| {tier} | {model} | {m} | {d:+.3f} [{lo:+.3f}, {hi:+.3f}]{star} |")
     lines += ["", "## Table 3. In-domain detectors on same-setup runs (AUROC [95% CI], within-family AUROC)", "",
               "| Model | Split | Peak | set_stats | pair_max | Family base rate only |", "|---|---|---|---|---|---|"]

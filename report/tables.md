@@ -27,7 +27,7 @@
 | transfer | Gemma final | set_stats | +0.002 [-0.030, +0.035] |
 | implicit | 27B disc. | pair_max | -0.009 [-0.031, +0.016] |
 | implicit | 27B disc. | set_stats | -0.065 [-0.148, +0.017] |
-| implicit | 27B final | pair_max | +0.024 [+0.000, +0.054] |
+| implicit | 27B final | pair_max | +0.024 [+0.000, +0.054] * |
 | implicit | 27B final | set_stats | -0.025 [-0.082, +0.030] |
 | implicit | Gemma disc. | pair_max | +0.013 [-0.018, +0.042] |
 | implicit | Gemma disc. | set_stats | -0.027 [-0.063, +0.012] |
