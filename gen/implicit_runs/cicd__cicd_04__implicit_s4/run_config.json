@@ -1,0 +1,32 @@
+{
+  "run_id": "cicd__cicd_04__implicit_s4",
+  "seed": 9003,
+  "mode": "implicit",
+  "scenario_id": "cicd_04",
+  "scenario_type": "cicd",
+  "agents": [
+    "Kevin Park",
+    "Oscar Wali",
+    "Isaac Drake",
+    "Adam Volkov"
+  ],
+  "roles": {
+    "Kevin Park": "implicit",
+    "Oscar Wali": "honest",
+    "Isaac Drake": "implicit",
+    "Adam Volkov": "honest"
+  },
+  "effective_roles": {
+    "Kevin Park": "implicit",
+    "Oscar Wali": "honest",
+    "Isaac Drake": "implicit",
+    "Adam Volkov": "honest"
+  },
+  "coalition": [
+    "Kevin Park",
+    "Isaac Drake"
+  ],
+  "collusion_active": false,
+  "base_run_id": "cicd__cicd_04__implicit",
+  "seed_index": 4
+}

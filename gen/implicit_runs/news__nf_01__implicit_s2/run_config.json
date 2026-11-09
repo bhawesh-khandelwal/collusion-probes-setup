@@ -1,0 +1,32 @@
+{
+  "run_id": "news__nf_01__implicit_s2",
+  "seed": 7000,
+  "mode": "implicit",
+  "scenario_id": "nf_01",
+  "scenario_type": "news",
+  "agents": [
+    "Uma Patel",
+    "Celine Dubois",
+    "Victor Lapointe",
+    "Kevin Park"
+  ],
+  "roles": {
+    "Uma Patel": "implicit",
+    "Celine Dubois": "implicit",
+    "Victor Lapointe": "honest",
+    "Kevin Park": "honest"
+  },
+  "effective_roles": {
+    "Uma Patel": "implicit",
+    "Celine Dubois": "implicit",
+    "Victor Lapointe": "honest",
+    "Kevin Park": "honest"
+  },
+  "coalition": [
+    "Uma Patel",
+    "Celine Dubois"
+  ],
+  "collusion_active": false,
+  "base_run_id": "news__nf_01__implicit",
+  "seed_index": 2
+}

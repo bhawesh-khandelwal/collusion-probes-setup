@@ -1,0 +1,32 @@
+{
+  "run_id": "rag__rag_02__implicit_s4",
+  "seed": 9001,
+  "mode": "implicit",
+  "scenario_id": "rag_02",
+  "scenario_type": "rag",
+  "agents": [
+    "Celine Dubois",
+    "Tara Brennan",
+    "Quinn Adeyemi",
+    "Elena Vasquez"
+  ],
+  "roles": {
+    "Celine Dubois": "implicit",
+    "Tara Brennan": "implicit",
+    "Quinn Adeyemi": "honest",
+    "Elena Vasquez": "honest"
+  },
+  "effective_roles": {
+    "Celine Dubois": "implicit",
+    "Tara Brennan": "implicit",
+    "Quinn Adeyemi": "honest",
+    "Elena Vasquez": "honest"
+  },
+  "coalition": [
+    "Celine Dubois",
+    "Tara Brennan"
+  ],
+  "collusion_active": false,
+  "base_run_id": "rag__rag_02__implicit",
+  "seed_index": 4
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "research__rp_04__implicit_s3",
+  "seed": 8003,
+  "mode": "implicit",
+  "scenario_id": "rp_04",
+  "scenario_type": "research",
+  "agents": [
+    "Paulo Alves",
+    "Clive Mbatha",
+    "Fiona MacGregor",
+    "Zoe Ferraro"
+  ],
+  "roles": {
+    "Paulo Alves": "implicit",
+    "Clive Mbatha": "honest",
+    "Fiona MacGregor": "implicit",
+    "Zoe Ferraro": "honest"
+  },
+  "effective_roles": {
+    "Paulo Alves": "implicit",
+    "Clive Mbatha": "honest",
+    "Fiona MacGregor": "implicit",
+    "Zoe Ferraro": "honest"
+  },
+  "coalition": [
+    "Paulo Alves",
+    "Fiona MacGregor"
+  ],
+  "collusion_active": false,
+  "base_run_id": "research__rp_04__implicit",
+  "seed_index": 3
+}

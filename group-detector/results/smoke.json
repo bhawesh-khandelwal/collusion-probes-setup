@@ -1,0 +1,494 @@
+{
+ "transfer|peak_suspicion|auroc_all": [
+  0.7970679012345679,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|recall@1%": [
+  0.08333333333333333,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_cicd": [
+  0.6666666666666667,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_code_review": [
+  1.0,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_news": [
+  0.75,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_pump_dump": [
+  0.888888888888889,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_rag": [
+  0.9166666666666667,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_research": [
+  0.9444444444444445,
+  0.0,
+  2
+ ],
+ "transfer|peak_suspicion|auroc_normal_alone": [
+  0.7725694444444444,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_all": [
+  0.8402777777777778,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|recall@1%": [
+  0.3333333333333333,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_cicd": [
+  0.8611111111111112,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_code_review": [
+  0.6944444444444444,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_news": [
+  0.9166666666666667,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_pump_dump": [
+  0.6388888888888888,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_rag": [
+  0.8333333333333334,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_research": [
+  1.0,
+  0.0,
+  2
+ ],
+ "transfer|deception_split|auroc_normal_alone": [
+  0.8307291666666666,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_all": [
+  0.49151234567901236,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|recall@1%": [
+  0.0,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_cicd": [
+  0.8055555555555556,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_code_review": [
+  0.2222222222222222,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_news": [
+  0.6944444444444444,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_pump_dump": [
+  0.33333333333333337,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_rag": [
+  0.4722222222222222,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_research": [
+  0.6944444444444445,
+  0.0,
+  2
+ ],
+ "transfer|activation_alignment|auroc_normal_alone": [
+  0.4878472222222222,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_all": [
+  0.8618827160493828,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|recall@1%": [
+  0.4166666666666667,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_cicd": [
+  0.75,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_code_review": [
+  0.9166666666666667,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_news": [
+  0.888888888888889,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_pump_dump": [
+  0.9166666666666667,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_rag": [
+  0.888888888888889,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_research": [
+  1.0,
+  0.0,
+  2
+ ],
+ "transfer|asymmetry_probe|auroc_normal_alone": [
+  0.8446180555555555,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_all": [
+  0.8287037037037038,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|recall@1%": [
+  0.2777777777777778,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_cicd": [
+  0.5555555555555556,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_code_review": [
+  1.0,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_news": [
+  0.638888888888889,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_pump_dump": [
+  1.0,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_rag": [
+  0.6944444444444444,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_research": [
+  1.0,
+  0.0,
+  2
+ ],
+ "transfer|sorted_concat|auroc_normal_alone": [
+  0.822048611111111,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_all": [
+  0.5200617283950617,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|recall@1%": [
+  0.0,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_cicd": [
+  0.8333333333333334,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_code_review": [
+  0.2777777777777778,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_news": [
+  0.7777777777777778,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_pump_dump": [
+  0.33333333333333337,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_rag": [
+  0.4444444444444445,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_research": [
+  0.5833333333333333,
+  0.0,
+  2
+ ],
+ "transfer|group_stats|auroc_normal_alone": [
+  0.5034722222222222,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_all": [
+  0.5100308641975309,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|recall@1%": [
+  0.027777777777777776,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_cicd": [
+  0.3055555555555555,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_code_review": [
+  0.7222222222222223,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_news": [
+  0.16666666666666666,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_pump_dump": [
+  0.8333333333333334,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_rag": [
+  0.7500000000000001,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_research": [
+  0.3055555555555556,
+  0.0,
+  2
+ ],
+ "transfer|pair_max|auroc_normal_alone": [
+  0.5138888888888888,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_all": [
+  0.4861111111111111,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|recall@1%": [
+  0.027777777777777776,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_cicd": [
+  0.3055555555555556,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_code_review": [
+  0.7222222222222223,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_news": [
+  0.11111111111111112,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_pump_dump": [
+  0.8333333333333333,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_rag": [
+  0.6666666666666666,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_research": [
+  0.25,
+  0.0,
+  2
+ ],
+ "transfer|pair_interact_max|auroc_normal_alone": [
+  0.4956597222222222,
+  0.0,
+  2
+ ],
+ "stego|peak_suspicion|auroc_all": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|peak_suspicion|recall@1%": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|peak_suspicion|auroc_bj": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|deception_split|auroc_all": [
+  0.995,
+  0.0,
+  2
+ ],
+ "stego|deception_split|recall@1%": [
+  0.95,
+  0.0,
+  2
+ ],
+ "stego|deception_split|auroc_bj": [
+  0.995,
+  0.0,
+  2
+ ],
+ "stego|activation_alignment|auroc_all": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|activation_alignment|recall@1%": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|activation_alignment|auroc_bj": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|asymmetry_probe|auroc_all": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|asymmetry_probe|recall@1%": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|asymmetry_probe|auroc_bj": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|sorted_concat|auroc_all": [
+  0.9974999999999999,
+  0.0,
+  2
+ ],
+ "stego|sorted_concat|recall@1%": [
+  0.95,
+  0.0,
+  2
+ ],
+ "stego|sorted_concat|auroc_bj": [
+  0.9974999999999999,
+  0.0,
+  2
+ ],
+ "stego|group_stats|auroc_all": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|group_stats|recall@1%": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|group_stats|auroc_bj": [
+  1.0,
+  0.0,
+  2
+ ],
+ "stego|pair_max|auroc_all": [
+  0.5050000000000001,
+  0.0,
+  2
+ ],
+ "stego|pair_max|recall@1%": [
+  0.1,
+  0.0,
+  2
+ ],
+ "stego|pair_max|auroc_bj": [
+  0.5050000000000001,
+  0.0,
+  2
+ ],
+ "stego|pair_interact_max|auroc_all": [
+  0.42,
+  0.0,
+  2
+ ],
+ "stego|pair_interact_max|recall@1%": [
+  0.1,
+  0.0,
+  2
+ ],
+ "stego|pair_interact_max|auroc_bj": [
+  0.42,
+  0.0,
+  2
+ ],
+ "_normal_alone_counts": {
+  "transfer": [
+   32,
+   32.0,
+   32
+  ],
+  "stego": [
+   0,
+   0.0,
+   0
+  ]
+ }
+}

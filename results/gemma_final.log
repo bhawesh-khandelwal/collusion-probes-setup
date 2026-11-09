@@ -1,0 +1,160 @@
+layer 24
+layer 25
+layer 26
+layer 27
+layer 28
+
+phase=final  best group by Core LODO: set_stats  {'set_stats': 0.986111111111111, 'pair_max': 0.9829365079365079, 'pair_interact_max': 0.8380952380952383, 'peak_suspicion': 0.9757936507936508, 'deception_split': 0.9607142857142856, 'asymmetry_probe': 0.9742063492063492, 'sorted_concat': 0.8753968253968255, 'activation_alignment': 0.5384920634920635}
+chosen (k, C): {24: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (2, 0.1)}, 25: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (2, 0.01)}, 26: {'set_stats': (2, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (4, 1.0)}, 27: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (8, 0.1)}, 28: {'set_stats': (2, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (1, 0.01)}}
+
+== transfer
+method                 LODO core              all runs          normal-alone  rec@1%
+peak_suspicion             0.976   0.636 [0.54,0.72]   0.555 [0.45,0.65]    0.11
+deception_split            0.961   0.544 [0.46,0.63]   0.482 [0.40,0.56]    0.06
+asymmetry_probe            0.974   0.587 [0.49,0.67]   0.509 [0.41,0.60]    0.07
+sorted_concat              0.875   0.547 [0.45,0.64]   0.551 [0.46,0.64]    0.03
+activation_alignment       0.538   0.499 [0.40,0.60]   0.451 [0.35,0.55]    0.03
+set_stats                  0.986   0.638 [0.56,0.71]   0.564 [0.48,0.64]    0.11
+pair_max                   0.983   0.600 [0.51,0.68]   0.562 [0.47,0.65]    0.10
+pair_interact_max          0.838   0.517 [0.44,0.59]   0.508 [0.42,0.59]    0.04
+  normal-alone (fixed): peak_suspicion=0.599  deception_split=0.525  asymmetry_probe=0.554  sorted_concat=0.587  activation_alignment=0.452  set_stats=0.610  pair_max=0.555  pair_interact_max=0.526
+transfer all           set_stats - asymmetry_probe: +0.051 CI [+0.020,+0.083]
+transfer normal_alone  set_stats - asymmetry_probe: +0.055 CI [+0.020,+0.091]
+transfer normal_alone_fixed set_stats - asymmetry_probe: +0.056 CI [+0.024,+0.089]
+transfer all           set_stats - deception_split: +0.093 CI [+0.040,+0.145]
+transfer normal_alone  set_stats - deception_split: +0.083 CI [+0.025,+0.142]
+transfer normal_alone_fixed set_stats - deception_split: +0.084 CI [+0.029,+0.138]
+transfer all           pair_max - asymmetry_probe: +0.013 CI [-0.049,+0.080]
+transfer normal_alone  pair_max - asymmetry_probe: +0.053 CI [-0.019,+0.130]
+transfer normal_alone_fixed pair_max - asymmetry_probe: +0.001 CI [-0.066,+0.073]
+transfer all           pair_max - deception_split: +0.056 CI [-0.024,+0.137]
+transfer normal_alone  pair_max - deception_split: +0.081 CI [-0.008,+0.173]
+transfer normal_alone_fixed pair_max - deception_split: +0.030 CI [-0.051,+0.111]
+transfer all           pair_interact_max - asymmetry_probe: -0.070 CI [-0.191,+0.055]
+transfer normal_alone  pair_interact_max - asymmetry_probe: -0.001 CI [-0.130,+0.133]
+transfer normal_alone_fixed pair_interact_max - asymmetry_probe: -0.028 CI [-0.157,+0.109]
+transfer all           pair_interact_max - deception_split: -0.028 CI [-0.125,+0.082]
+transfer normal_alone  pair_interact_max - deception_split: +0.027 CI [-0.078,+0.142]
+transfer normal_alone_fixed pair_interact_max - deception_split: +0.000 CI [-0.105,+0.119]
+
+== implicit
+method                 LODO core              all runs          normal-alone  rec@1%
+peak_suspicion             0.976   0.626 [0.54,0.71]   0.553 [0.46,0.64]    0.11
+deception_split            0.961   0.539 [0.46,0.61]   0.473 [0.38,0.55]    0.06
+asymmetry_probe            0.974   0.579 [0.49,0.66]   0.505 [0.41,0.59]    0.07
+sorted_concat              0.875   0.503 [0.42,0.59]   0.502 [0.42,0.59]    0.03
+activation_alignment       0.538   0.491 [0.38,0.60]   0.437 [0.33,0.55]    0.07
+set_stats                  0.986   0.608 [0.52,0.68]   0.537 [0.44,0.62]    0.09
+pair_max                   0.983   0.602 [0.52,0.68]   0.576 [0.49,0.66]    0.15
+pair_interact_max          0.838   0.502 [0.43,0.57]   0.466 [0.39,0.53]    0.06
+  normal-alone (fixed): peak_suspicion=0.580  deception_split=0.518  asymmetry_probe=0.548  sorted_concat=0.505  activation_alignment=0.439  set_stats=0.569  pair_max=0.581  pair_interact_max=0.498
+implicit all           set_stats - asymmetry_probe: +0.028 CI [-0.001,+0.059]
+implicit normal_alone  set_stats - asymmetry_probe: +0.032 CI [-0.002,+0.067]
+implicit normal_alone_fixed set_stats - asymmetry_probe: +0.022 CI [-0.009,+0.053]
+implicit all           set_stats - deception_split: +0.068 CI [+0.018,+0.119]
+implicit normal_alone  set_stats - deception_split: +0.064 CI [+0.009,+0.124]
+implicit normal_alone_fixed set_stats - deception_split: +0.051 CI [+0.005,+0.101]
+implicit all           pair_max - asymmetry_probe: +0.022 CI [-0.052,+0.094]
+implicit normal_alone  pair_max - asymmetry_probe: +0.071 CI [-0.006,+0.142]
+implicit normal_alone_fixed pair_max - asymmetry_probe: +0.034 CI [-0.049,+0.114]
+implicit all           pair_max - deception_split: +0.062 CI [-0.028,+0.156]
+implicit normal_alone  pair_max - deception_split: +0.103 CI [+0.009,+0.195]
+implicit normal_alone_fixed pair_max - deception_split: +0.063 CI [-0.034,+0.162]
+implicit all           pair_interact_max - asymmetry_probe: -0.077 CI [-0.191,+0.036]
+implicit normal_alone  pair_interact_max - asymmetry_probe: -0.040 CI [-0.166,+0.081]
+implicit normal_alone_fixed pair_interact_max - asymmetry_probe: -0.050 CI [-0.169,+0.073]
+implicit all           pair_interact_max - deception_split: -0.037 CI [-0.134,+0.059]
+implicit normal_alone  pair_interact_max - deception_split: -0.008 CI [-0.111,+0.094]
+implicit normal_alone_fixed pair_interact_max - deception_split: -0.020 CI [-0.119,+0.082]
+
+== implicit_coord
+method                 LODO core              all runs          normal-alone  rec@1%
+peak_suspicion             0.976   0.579 [0.46,0.69]   0.530 [0.41,0.64]    0.05
+deception_split            0.961   0.545 [0.43,0.65]   0.505 [0.39,0.61]    0.08
+asymmetry_probe            0.974   0.558 [0.44,0.67]   0.511 [0.39,0.63]    0.06
+sorted_concat              0.875   0.517 [0.42,0.62]   0.524 [0.41,0.64]    0.13
+activation_alignment       0.538   0.615 [0.46,0.76]   0.588 [0.43,0.74]    0.16
+set_stats                  0.986   0.619 [0.50,0.72]   0.576 [0.46,0.68]    0.08
+pair_max                   0.983   0.637 [0.51,0.75]   0.620 [0.49,0.74]    0.15
+pair_interact_max          0.838   0.530 [0.45,0.61]   0.515 [0.43,0.60]    0.09
+  normal-alone (fixed): peak_suspicion=0.517  deception_split=0.508  asymmetry_probe=0.504  sorted_concat=0.518  activation_alignment=0.531  set_stats=0.568  pair_max=0.629  pair_interact_max=0.525
+implicit_coord all           set_stats - asymmetry_probe: +0.061 CI [+0.008,+0.118]
+implicit_coord normal_alone  set_stats - asymmetry_probe: +0.065 CI [+0.008,+0.127]
+implicit_coord normal_alone_fixed set_stats - asymmetry_probe: +0.064 CI [+0.008,+0.122]
+implicit_coord all           set_stats - deception_split: +0.074 CI [-0.000,+0.150]
+implicit_coord normal_alone  set_stats - deception_split: +0.071 CI [-0.008,+0.153]
+implicit_coord normal_alone_fixed set_stats - deception_split: +0.060 CI [-0.015,+0.133]
+implicit_coord all           pair_max - asymmetry_probe: +0.079 CI [-0.045,+0.210]
+implicit_coord normal_alone  pair_max - asymmetry_probe: +0.109 CI [-0.007,+0.237]
+implicit_coord normal_alone_fixed pair_max - asymmetry_probe: +0.125 CI [+0.007,+0.254]
+implicit_coord all           pair_max - deception_split: +0.091 CI [-0.055,+0.232]
+implicit_coord normal_alone  pair_max - deception_split: +0.115 CI [-0.032,+0.264]
+implicit_coord normal_alone_fixed pair_max - deception_split: +0.121 CI [-0.027,+0.271]
+implicit_coord all           pair_interact_max - asymmetry_probe: -0.028 CI [-0.164,+0.122]
+implicit_coord normal_alone  pair_interact_max - asymmetry_probe: +0.004 CI [-0.138,+0.161]
+implicit_coord normal_alone_fixed pair_interact_max - asymmetry_probe: +0.021 CI [-0.130,+0.187]
+implicit_coord all           pair_interact_max - deception_split: -0.015 CI [-0.130,+0.102]
+implicit_coord normal_alone  pair_interact_max - deception_split: +0.010 CI [-0.115,+0.132]
+implicit_coord normal_alone_fixed pair_interact_max - deception_split: +0.017 CI [-0.116,+0.149]
+
+== implicit2_coord
+method                 LODO core              all runs          normal-alone  rec@1%
+peak_suspicion             0.976   0.624 [0.56,0.70]   0.590 [0.53,0.66]    0.04
+deception_split            0.961   0.541 [0.47,0.61]   0.514 [0.45,0.58]    0.01
+asymmetry_probe            0.974   0.583 [0.52,0.65]   0.549 [0.48,0.62]    0.01
+sorted_concat              0.875   0.414 [0.34,0.49]   0.411 [0.34,0.49]    0.01
+activation_alignment       0.538   0.524 [0.44,0.61]   0.512 [0.43,0.60]    0.01
+set_stats                  0.986   0.594 [0.54,0.65]   0.569 [0.51,0.62]    0.03
+pair_max                   0.983   0.609 [0.54,0.68]   0.589 [0.52,0.66]    0.02
+pair_interact_max          0.838   0.437 [0.39,0.48]   0.413 [0.36,0.46]    0.01
+  normal-alone (fixed): peak_suspicion=0.582  deception_split=0.518  asymmetry_probe=0.547  sorted_concat=0.420  activation_alignment=0.488  set_stats=0.562  pair_max=0.575  pair_interact_max=0.426
+implicit2_coord all           set_stats - asymmetry_probe: +0.011 CI [-0.025,+0.045]
+implicit2_coord normal_alone  set_stats - asymmetry_probe: +0.019 CI [-0.021,+0.059]
+implicit2_coord normal_alone_fixed set_stats - asymmetry_probe: +0.015 CI [-0.024,+0.056]
+implicit2_coord all           set_stats - deception_split: +0.052 CI [+0.002,+0.099]
+implicit2_coord normal_alone  set_stats - deception_split: +0.054 CI [+0.001,+0.105]
+implicit2_coord normal_alone_fixed set_stats - deception_split: +0.045 CI [-0.012,+0.098]
+implicit2_coord all           pair_max - asymmetry_probe: +0.027 CI [-0.035,+0.086]
+implicit2_coord normal_alone  pair_max - asymmetry_probe: +0.039 CI [-0.023,+0.101]
+implicit2_coord normal_alone_fixed pair_max - asymmetry_probe: +0.028 CI [-0.042,+0.093]
+implicit2_coord all           pair_max - deception_split: +0.068 CI [-0.011,+0.154]
+implicit2_coord normal_alone  pair_max - deception_split: +0.075 CI [-0.008,+0.160]
+implicit2_coord normal_alone_fixed pair_max - deception_split: +0.057 CI [-0.032,+0.152]
+implicit2_coord all           pair_interact_max - asymmetry_probe: -0.145 CI [-0.223,-0.070]
+implicit2_coord normal_alone  pair_interact_max - asymmetry_probe: -0.136 CI [-0.220,-0.061]
+implicit2_coord normal_alone_fixed pair_interact_max - asymmetry_probe: -0.121 CI [-0.207,-0.039]
+implicit2_coord all           pair_interact_max - deception_split: -0.104 CI [-0.178,-0.033]
+implicit2_coord normal_alone  pair_interact_max - deception_split: -0.101 CI [-0.181,-0.028]
+implicit2_coord normal_alone_fixed pair_interact_max - deception_split: -0.092 CI [-0.175,-0.012]
+
+== game
+method                 LODO core              all runs          normal-alone  rec@1%
+peak_suspicion             0.976   0.585 [0.47,0.70]   0.461 [0.34,0.58]    0.21
+deception_split            0.961   0.491 [0.37,0.60]   0.424 [0.30,0.54]    0.08
+asymmetry_probe            0.974   0.542 [0.43,0.65]   0.433 [0.31,0.55]    0.15
+sorted_concat              0.875   0.523 [0.40,0.64]   0.553 [0.42,0.68]    0.08
+activation_alignment       0.538   0.287 [0.19,0.40]   0.266 [0.15,0.39]    0.01
+set_stats                  0.986   0.521 [0.42,0.61]   0.424 [0.34,0.52]    0.09
+pair_max                   0.983   0.605 [0.47,0.73]   0.522 [0.38,0.66]    0.18
+pair_interact_max          0.838   0.620 [0.52,0.72]   0.600 [0.50,0.70]    0.11
+  normal-alone (fixed): peak_suspicion=0.563  deception_split=0.464  asymmetry_probe=0.512  sorted_concat=0.545  activation_alignment=0.263  set_stats=0.484  pair_max=0.576  pair_interact_max=0.618
+game all           set_stats - asymmetry_probe: -0.021 CI [-0.071,+0.034]
+game normal_alone  set_stats - asymmetry_probe: -0.009 CI [-0.075,+0.061]
+game normal_alone_fixed set_stats - asymmetry_probe: -0.028 CI [-0.085,+0.034]
+game all           set_stats - deception_split: +0.030 CI [-0.056,+0.111]
+game normal_alone  set_stats - deception_split: -0.000 CI [-0.091,+0.092]
+game normal_alone_fixed set_stats - deception_split: +0.020 CI [-0.073,+0.105]
+game all           pair_max - asymmetry_probe: +0.063 CI [-0.052,+0.183]
+game normal_alone  pair_max - asymmetry_probe: +0.089 CI [-0.042,+0.226]
+game normal_alone_fixed pair_max - asymmetry_probe: +0.064 CI [-0.062,+0.194]
+game all           pair_max - deception_split: +0.114 CI [-0.054,+0.283]
+game normal_alone  pair_max - deception_split: +0.098 CI [-0.083,+0.273]
+game normal_alone_fixed pair_max - deception_split: +0.112 CI [-0.068,+0.284]
+game all           pair_interact_max - asymmetry_probe: +0.078 CI [-0.040,+0.210]
+game normal_alone  pair_interact_max - asymmetry_probe: +0.167 CI [+0.037,+0.310]
+game normal_alone_fixed pair_interact_max - asymmetry_probe: +0.106 CI [-0.021,+0.244]
+game all           pair_interact_max - deception_split: +0.129 CI [+0.025,+0.237]
+game normal_alone  pair_interact_max - deception_split: +0.176 CI [+0.058,+0.295]
+game normal_alone_fixed pair_interact_max - deception_split: +0.154 CI [+0.053,+0.260]
+normal-alone counts: {'transfer': [31, 30, 30, 27, 30], 'implicit': [31, 32, 32, 29, 27], 'implicit_coord': [18, 19, 18, 21, 17], 'implicit2_coord': [26, 23, 23, 26, 26], 'game': [21, 18, 15, 14, 12]}
+normal-alone (fixed across layers) counts: {'transfer': 31, 'implicit': 30, 'implicit_coord': 16, 'implicit2_coord': 23, 'game': 18}

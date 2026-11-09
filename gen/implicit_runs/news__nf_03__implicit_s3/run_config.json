@@ -1,0 +1,32 @@
+{
+  "run_id": "news__nf_03__implicit_s3",
+  "seed": 8002,
+  "mode": "implicit",
+  "scenario_id": "nf_03",
+  "scenario_type": "news",
+  "agents": [
+    "Julia Lindqvist",
+    "Olivia Petrov",
+    "Zoe Ferraro",
+    "Laura Mbeki"
+  ],
+  "roles": {
+    "Julia Lindqvist": "implicit",
+    "Olivia Petrov": "implicit",
+    "Zoe Ferraro": "honest",
+    "Laura Mbeki": "honest"
+  },
+  "effective_roles": {
+    "Julia Lindqvist": "implicit",
+    "Olivia Petrov": "implicit",
+    "Zoe Ferraro": "honest",
+    "Laura Mbeki": "honest"
+  },
+  "coalition": [
+    "Julia Lindqvist",
+    "Olivia Petrov"
+  ],
+  "collusion_active": false,
+  "base_run_id": "news__nf_03__implicit",
+  "seed_index": 3
+}

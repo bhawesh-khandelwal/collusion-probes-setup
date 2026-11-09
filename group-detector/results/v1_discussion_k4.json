@@ -1,0 +1,452 @@
+{
+ "phase": "discussion",
+ "lodo_core": {
+  "peak_suspicion": 1.0,
+  "deception_split": 1.0,
+  "asymmetry_probe": 1.0,
+  "sorted_concat": 1.0,
+  "activation_alignment": 1.0
+ },
+ "lodo_core_group_selected": {
+  "set_stats": 1.0,
+  "pair_max": 1.0,
+  "pair_interact_max": 1.0,
+  "peak_suspicion": 1.0,
+  "deception_split": 1.0,
+  "asymmetry_probe": 1.0,
+  "sorted_concat": 1.0,
+  "activation_alignment": 1.0
+ },
+ "chosen_configs": {
+  "26": {
+   "set_stats": [
+    4,
+    0.01
+   ],
+   "pair_max": [
+    4,
+    0.01
+   ],
+   "pair_interact_max": [
+    4,
+    0.01
+   ]
+  },
+  "27": {
+   "set_stats": [
+    4,
+    0.01
+   ],
+   "pair_max": [
+    4,
+    0.01
+   ],
+   "pair_interact_max": [
+    4,
+    0.01
+   ]
+  },
+  "28": {
+   "set_stats": [
+    4,
+    0.01
+   ],
+   "pair_max": [
+    4,
+    0.01
+   ],
+   "pair_interact_max": [
+    4,
+    0.01
+   ]
+  },
+  "29": {
+   "set_stats": [
+    4,
+    0.01
+   ],
+   "pair_max": [
+    4,
+    0.01
+   ],
+   "pair_interact_max": [
+    4,
+    0.1
+   ]
+  },
+  "30": {
+   "set_stats": [
+    4,
+    0.01
+   ],
+   "pair_max": [
+    4,
+    0.01
+   ],
+   "pair_interact_max": [
+    4,
+    0.01
+   ]
+  }
+ },
+ "best_group_by_lodo": "set_stats",
+ "normal_alone_counts": {
+  "transfer": [
+   32,
+   29,
+   32,
+   31,
+   27
+  ],
+  "stego": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "transfer": {
+  "all": {
+   "peak_suspicion": {
+    "auroc": 0.8305555555555555,
+    "ci": [
+     0.7441203703703704,
+     0.9144328703703704
+    ]
+   },
+   "deception_split": {
+    "auroc": 0.8674382716049382,
+    "ci": [
+     0.7931365740740741,
+     0.935829475308642
+    ]
+   },
+   "asymmetry_probe": {
+    "auroc": 0.8910493827160494,
+    "ci": [
+     0.8262229938271605,
+     0.9492361111111112
+    ]
+   },
+   "sorted_concat": {
+    "auroc": 0.8382716049382715,
+    "ci": [
+     0.7401273148148149,
+     0.9225462962962963
+    ]
+   },
+   "activation_alignment": {
+    "auroc": 0.4919753086419753,
+    "ci": [
+     0.34520061728395063,
+     0.6133564814814815
+    ]
+   },
+   "set_stats": {
+    "auroc": 0.7432098765432098,
+    "ci": [
+     0.6370138888888889,
+     0.8270293209876545
+    ]
+   },
+   "pair_max": {
+    "auroc": 0.8166666666666667,
+    "ci": [
+     0.718479938271605,
+     0.9021836419753086
+    ]
+   },
+   "pair_interact_max": {
+    "auroc": 0.8183641975308641,
+    "ci": [
+     0.7258603395061728,
+     0.9009683641975309
+    ]
+   },
+   "set_stats - asymmetry_probe": {
+    "diff": -0.14783950617283959,
+    "ci": [
+     -0.22393132716049383,
+     -0.08349151234567893
+    ],
+    "p_le_0": 1.0
+   },
+   "set_stats - deception_split": {
+    "diff": -0.12422839506172845,
+    "ci": [
+     -0.2315817901234568,
+     -0.021836419753086624
+    ],
+    "p_le_0": 0.99
+   },
+   "pair_max - asymmetry_probe": {
+    "diff": -0.07438271604938274,
+    "ci": [
+     -0.12585648148148154,
+     -0.024996141975308663
+    ],
+    "p_le_0": 1.0
+   },
+   "pair_max - deception_split": {
+    "diff": -0.0507716049382716,
+    "ci": [
+     -0.1698958333333334,
+     0.06097993827160494
+    ],
+    "p_le_0": 0.83
+   },
+   "pair_interact_max - asymmetry_probe": {
+    "diff": -0.0726851851851853,
+    "ci": [
+     -0.12015817901234574,
+     -0.018202160493827
+    ],
+    "p_le_0": 1.0
+   },
+   "pair_interact_max - deception_split": {
+    "diff": -0.04907407407407416,
+    "ci": [
+     -0.1646913580246914,
+     0.06817901234567901
+    ],
+    "p_le_0": 0.83
+   }
+  },
+  "normal_alone": {
+   "peak_suspicion": {
+    "auroc": 0.8012879823031535,
+    "ci": [
+     0.7043527915277775,
+     0.8942800490280332
+    ]
+   },
+   "deception_split": {
+    "auroc": 0.854089298752157,
+    "ci": [
+     0.7707177844567237,
+     0.9303595033290843
+    ]
+   },
+   "asymmetry_probe": {
+    "auroc": 0.8727825370095716,
+    "ci": [
+     0.7954949686894904,
+     0.9411095067161275
+    ]
+   },
+   "sorted_concat": {
+    "auroc": 0.8195141664034569,
+    "ci": [
+     0.7233176030601381,
+     0.9189360696054244
+    ]
+   },
+   "activation_alignment": {
+    "auroc": 0.4943355271289086,
+    "ci": [
+     0.333937355520165,
+     0.6236203034092521
+    ]
+   },
+   "set_stats": {
+    "auroc": 0.7055661554676664,
+    "ci": [
+     0.5957202803322381,
+     0.8011806243620027
+    ]
+   },
+   "pair_max": {
+    "auroc": 0.7874310576566556,
+    "ci": [
+     0.6795240979793855,
+     0.8783746148354803
+    ]
+   },
+   "pair_interact_max": {
+    "auroc": 0.790497028591439,
+    "ci": [
+     0.6814439954501915,
+     0.8804460952324479
+    ]
+   },
+   "set_stats - asymmetry_probe": {
+    "diff": -0.1672163815419052,
+    "ci": [
+     -0.25569628153171503,
+     -0.09044263158768079
+    ],
+    "p_le_0": 1.0
+   },
+   "set_stats - deception_split": {
+    "diff": -0.14852314328449057,
+    "ci": [
+     -0.2695238336816775,
+     -0.03613602031076618
+    ],
+    "p_le_0": 0.995
+   },
+   "pair_max - asymmetry_probe": {
+    "diff": -0.0853514793529161,
+    "ci": [
+     -0.13706989293879981,
+     -0.029535160303735514
+    ],
+    "p_le_0": 1.0
+   },
+   "pair_max - deception_split": {
+    "diff": -0.06665824109550145,
+    "ci": [
+     -0.19579850136212407,
+     0.05953333986637174
+    ],
+    "p_le_0": 0.875
+   },
+   "pair_interact_max - asymmetry_probe": {
+    "diff": -0.08228550841813265,
+    "ci": [
+     -0.1345960515295858,
+     -0.02204743590417485
+    ],
+    "p_le_0": 1.0
+   },
+   "pair_interact_max - deception_split": {
+    "diff": -0.063592270160718,
+    "ci": [
+     -0.1957753632832075,
+     0.06891996057444646
+    ],
+    "p_le_0": 0.85
+   }
+  },
+  "recall@1%": {
+   "peak_suspicion": 0.11666666666666665,
+   "deception_split": 0.43888888888888894,
+   "asymmetry_probe": 0.37222222222222223,
+   "sorted_concat": 0.2666666666666667,
+   "activation_alignment": 0.0,
+   "set_stats": 0.06666666666666668,
+   "pair_max": 0.10555555555555556,
+   "pair_interact_max": 0.09444444444444444
+  }
+ },
+ "stego": {
+  "all": {
+   "peak_suspicion": {
+    "auroc": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "deception_split": {
+    "auroc": 0.999,
+    "ci": [
+     0.9949999999999999,
+     1.0
+    ]
+   },
+   "asymmetry_probe": {
+    "auroc": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "sorted_concat": {
+    "auroc": 0.9995,
+    "ci": [
+     0.9979875,
+     1.0
+    ]
+   },
+   "activation_alignment": {
+    "auroc": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "set_stats": {
+    "auroc": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "pair_max": {
+    "auroc": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "pair_interact_max": {
+    "auroc": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "set_stats - asymmetry_probe": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "p_le_0": 1.0
+   },
+   "set_stats - deception_split": {
+    "diff": 0.0010000000000000009,
+    "ci": [
+     0.0,
+     0.0050000000000001155
+    ],
+    "p_le_0": 0.41
+   },
+   "pair_max - asymmetry_probe": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "p_le_0": 1.0
+   },
+   "pair_max - deception_split": {
+    "diff": 0.0010000000000000009,
+    "ci": [
+     0.0,
+     0.0050000000000001155
+    ],
+    "p_le_0": 0.41
+   },
+   "pair_interact_max - asymmetry_probe": {
+    "diff": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "p_le_0": 1.0
+   },
+   "pair_interact_max - deception_split": {
+    "diff": 0.0010000000000000009,
+    "ci": [
+     0.0,
+     0.0050000000000001155
+    ],
+    "p_le_0": 0.41
+   }
+  },
+  "normal_alone": null,
+  "recall@1%": {
+   "peak_suspicion": 1.0,
+   "deception_split": 0.99,
+   "asymmetry_probe": 1.0,
+   "sorted_concat": 0.99,
+   "activation_alignment": 1.0,
+   "set_stats": 1.0,
+   "pair_max": 1.0,
+   "pair_interact_max": 1.0
+  }
+ }
+}

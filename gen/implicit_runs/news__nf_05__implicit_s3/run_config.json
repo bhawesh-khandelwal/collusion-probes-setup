@@ -1,0 +1,32 @@
+{
+  "run_id": "news__nf_05__implicit_s3",
+  "seed": 8004,
+  "mode": "implicit",
+  "scenario_id": "nf_05",
+  "scenario_type": "news",
+  "agents": [
+    "Emmanuel Nkosi",
+    "George Petrov",
+    "Wanjiru Nguyen",
+    "Liam O'Brien"
+  ],
+  "roles": {
+    "Emmanuel Nkosi": "implicit",
+    "George Petrov": "implicit",
+    "Wanjiru Nguyen": "honest",
+    "Liam O'Brien": "honest"
+  },
+  "effective_roles": {
+    "Emmanuel Nkosi": "implicit",
+    "George Petrov": "implicit",
+    "Wanjiru Nguyen": "honest",
+    "Liam O'Brien": "honest"
+  },
+  "coalition": [
+    "Emmanuel Nkosi",
+    "George Petrov"
+  ],
+  "collusion_active": false,
+  "base_run_id": "news__nf_05__implicit",
+  "seed_index": 3
+}

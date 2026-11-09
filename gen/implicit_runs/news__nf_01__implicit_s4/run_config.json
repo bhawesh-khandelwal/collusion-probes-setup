@@ -1,0 +1,32 @@
+{
+  "run_id": "news__nf_01__implicit_s4",
+  "seed": 9000,
+  "mode": "implicit",
+  "scenario_id": "nf_01",
+  "scenario_type": "news",
+  "agents": [
+    "Wendy Nakashima",
+    "Victor Lapointe",
+    "Marcus Webb",
+    "Celine Dubois"
+  ],
+  "roles": {
+    "Wendy Nakashima": "implicit",
+    "Victor Lapointe": "implicit",
+    "Marcus Webb": "honest",
+    "Celine Dubois": "honest"
+  },
+  "effective_roles": {
+    "Wendy Nakashima": "implicit",
+    "Victor Lapointe": "implicit",
+    "Marcus Webb": "honest",
+    "Celine Dubois": "honest"
+  },
+  "coalition": [
+    "Wendy Nakashima",
+    "Victor Lapointe"
+  ],
+  "collusion_active": false,
+  "base_run_id": "news__nf_01__implicit",
+  "seed_index": 4
+}

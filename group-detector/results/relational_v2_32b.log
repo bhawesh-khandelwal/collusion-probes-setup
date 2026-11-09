@@ -1,0 +1,17 @@
+layer 26
+layer 27
+layer 28
+layer 29
+layer 30
+
+tier            metric       scope    runs  colluder gap  honest gap      DiD  95% CI
+core            cos_std      any        31        0.6496      0.6234   0.0262  [-0.0258, +0.0768]
+core            cos_std      family     28        0.5984      0.5216   0.0768  [+0.0032, +0.1591]  *
+core            cos_noprobe  any        31        0.6931      0.6729   0.0202  [-0.0367, +0.0779]
+core            cos_noprobe  family     28        0.6379      0.5620   0.0759  [-0.0038, +0.1683]
+transfer        cos_std      any        36        0.1617      0.1770  -0.0152  [-0.0749, +0.0496]
+transfer        cos_std      family     36        0.0608      0.0948  -0.0340  [-0.1029, +0.0318]
+transfer        cos_noprobe  any        36        0.1622      0.1771  -0.0149  [-0.0737, +0.0498]
+transfer        cos_noprobe  family     36        0.0609      0.0949  -0.0340  [-0.1037, +0.0365]
+transfer        learned      any        36        2.4960      2.9138  -0.4178  [-1.7788, +0.9721]
+transfer        learned      family     36        1.1445      1.7676  -0.6231  [-2.0950, +0.8503]

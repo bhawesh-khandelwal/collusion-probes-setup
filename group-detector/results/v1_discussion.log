@@ -1,0 +1,31 @@
+layer 26
+layer 27
+layer 28
+layer 29
+layer 30
+
+phase=discussion  best group by Core LODO: set_stats  {'set_stats': 1.0, 'pair_max': 1.0, 'pair_interact_max': 1.0, 'peak_suspicion': 1.0, 'deception_split': 1.0, 'asymmetry_probe': 1.0, 'sorted_concat': 1.0, 'activation_alignment': 1.0}
+chosen (k, C): {26: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (1, 0.01)}, 27: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (1, 0.01)}, 28: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (1, 0.01)}, 29: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (1, 0.01)}, 30: {'set_stats': (1, 0.01), 'pair_max': (1, 0.01), 'pair_interact_max': (1, 0.01)}}
+
+method                 LODO core              transfer          normal-alone  rec@1%   stego
+peak_suspicion             1.000   0.831 [0.72,0.92]   0.801 [0.68,0.90]    0.12   1.000
+deception_split            1.000   0.867 [0.79,0.93]   0.854 [0.77,0.92]    0.44   0.999
+asymmetry_probe            1.000   0.891 [0.82,0.95]   0.873 [0.79,0.94]    0.37   1.000
+sorted_concat              1.000   0.838 [0.74,0.92]   0.820 [0.72,0.91]    0.27   1.000
+activation_alignment       1.000   0.492 [0.36,0.62]   0.494 [0.36,0.62]    0.00   1.000
+set_stats                  1.000   0.758 [0.63,0.87]   0.726 [0.59,0.84]    0.03   1.000
+pair_max                   1.000   0.828 [0.72,0.92]   0.801 [0.68,0.90]    0.09   1.000
+pair_interact_max          1.000   0.828 [0.72,0.92]   0.801 [0.68,0.90]    0.09   1.000
+transfer all           set_stats - asymmetry_probe: -0.133 CI [-0.213,-0.065]
+transfer normal_alone  set_stats - asymmetry_probe: -0.147 CI [-0.233,-0.073]
+transfer all           set_stats - deception_split: -0.109 CI [-0.252,+0.021]
+transfer normal_alone  set_stats - deception_split: -0.128 CI [-0.282,+0.017]
+transfer all           pair_max - asymmetry_probe: -0.063 CI [-0.116,-0.019]
+transfer normal_alone  pair_max - asymmetry_probe: -0.072 CI [-0.132,-0.022]
+transfer all           pair_max - deception_split: -0.039 CI [-0.163,+0.069]
+transfer normal_alone  pair_max - deception_split: -0.053 CI [-0.187,+0.070]
+transfer all           pair_interact_max - asymmetry_probe: -0.063 CI [-0.116,-0.019]
+transfer normal_alone  pair_interact_max - asymmetry_probe: -0.071 CI [-0.131,-0.023]
+transfer all           pair_interact_max - deception_split: -0.039 CI [-0.163,+0.069]
+transfer normal_alone  pair_interact_max - deception_split: -0.053 CI [-0.187,+0.070]
+normal-alone counts: {'transfer': [32, 29, 32, 31, 27], 'stego': [0, 0, 0, 0, 0]}

@@ -1,0 +1,32 @@
+{
+  "run_id": "research__rp_05__implicit_s0",
+  "seed": 5004,
+  "mode": "implicit",
+  "scenario_id": "rp_05",
+  "scenario_type": "research",
+  "agents": [
+    "Victor Lapointe",
+    "Helen Obi",
+    "Rachel Kim",
+    "Marcus Webb"
+  ],
+  "roles": {
+    "Victor Lapointe": "implicit",
+    "Helen Obi": "honest",
+    "Rachel Kim": "implicit",
+    "Marcus Webb": "honest"
+  },
+  "effective_roles": {
+    "Victor Lapointe": "implicit",
+    "Helen Obi": "honest",
+    "Rachel Kim": "implicit",
+    "Marcus Webb": "honest"
+  },
+  "coalition": [
+    "Victor Lapointe",
+    "Rachel Kim"
+  ],
+  "collusion_active": false,
+  "base_run_id": "research__rp_05__implicit",
+  "seed_index": 0
+}

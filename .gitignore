@@ -1,0 +1,16 @@
+.env
+.venv*/
+models/
+acts/
+acts_gemma/
+logs/
+__pycache__/
+plan-draft.md
+report/OUTLINE.md
+report/out/report.docx
+report/out/report.pdf
+review/human_check.md
+review/human_check_key.json
+review/extend_human_check.py
+review/score_human_check.py
+.DS_Store

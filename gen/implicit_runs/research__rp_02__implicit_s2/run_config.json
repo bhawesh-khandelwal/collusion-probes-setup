@@ -1,0 +1,32 @@
+{
+  "run_id": "research__rp_02__implicit_s2",
+  "seed": 7001,
+  "mode": "implicit",
+  "scenario_id": "rp_02",
+  "scenario_type": "research",
+  "agents": [
+    "Hiroshi Tanaka",
+    "Ursula Korhonen",
+    "Uma Patel",
+    "Janet Hernandez"
+  ],
+  "roles": {
+    "Hiroshi Tanaka": "implicit",
+    "Ursula Korhonen": "honest",
+    "Uma Patel": "implicit",
+    "Janet Hernandez": "honest"
+  },
+  "effective_roles": {
+    "Hiroshi Tanaka": "implicit",
+    "Ursula Korhonen": "honest",
+    "Uma Patel": "implicit",
+    "Janet Hernandez": "honest"
+  },
+  "coalition": [
+    "Hiroshi Tanaka",
+    "Uma Patel"
+  ],
+  "collusion_active": false,
+  "base_run_id": "research__rp_02__implicit",
+  "seed_index": 2
+}

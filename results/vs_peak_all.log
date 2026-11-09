@@ -1,0 +1,36 @@
+gemma_scores_discussion.json transfer         set_stats  - peak -0.023 [-0.056, +0.008]
+gemma_scores_discussion.json transfer         pair_max   - peak +0.005 [-0.025, +0.034]
+gemma_scores_discussion.json implicit         set_stats  - peak -0.027 [-0.063, +0.012]
+gemma_scores_discussion.json implicit         pair_max   - peak +0.013 [-0.018, +0.042]
+gemma_scores_discussion.json implicit_coord   set_stats  - peak +0.022 [-0.037, +0.081]
+gemma_scores_discussion.json implicit_coord   pair_max   - peak +0.017 [-0.030, +0.075]
+gemma_scores_discussion.json implicit2_coord  set_stats  - peak -0.029 [-0.052, -0.004] *
+gemma_scores_discussion.json implicit2_coord  pair_max   - peak +0.007 [-0.009, +0.023]
+gemma_scores_discussion.json game             set_stats  - peak +0.008 [-0.038, +0.054]
+gemma_scores_discussion.json game             pair_max   - peak +0.031 [-0.007, +0.068]
+gemma_scores_final.json      transfer         set_stats  - peak +0.002 [-0.030, +0.035]
+gemma_scores_final.json      transfer         pair_max   - peak -0.036 [-0.104, +0.035]
+gemma_scores_final.json      implicit         set_stats  - peak -0.019 [-0.047, +0.012]
+gemma_scores_final.json      implicit         pair_max   - peak -0.025 [-0.096, +0.047]
+gemma_scores_final.json      implicit_coord   set_stats  - peak +0.040 [+0.009, +0.078] *
+gemma_scores_final.json      implicit_coord   pair_max   - peak +0.058 [-0.044, +0.163]
+gemma_scores_final.json      implicit2_coord  set_stats  - peak -0.030 [-0.068, +0.006]
+gemma_scores_final.json      implicit2_coord  pair_max   - peak -0.015 [-0.062, +0.033]
+gemma_scores_final.json      game             set_stats  - peak -0.064 [-0.146, +0.019]
+gemma_scores_final.json      game             pair_max   - peak +0.020 [-0.049, +0.096]
+scores_27b_transfer_discussion.json transfer         set_stats  - peak -0.041 [-0.086, -0.001] *
+scores_27b_transfer_discussion.json transfer         pair_max   - peak -0.003 [-0.025, +0.018]
+scores_27b_transfer_discussion.json implicit         set_stats  - peak -0.065 [-0.148, +0.017]
+scores_27b_transfer_discussion.json implicit         pair_max   - peak -0.009 [-0.031, +0.016]
+scores_27b_transfer_final.json transfer         set_stats  - peak -0.010 [-0.030, +0.007]
+scores_27b_transfer_final.json transfer         pair_max   - peak +0.007 [-0.007, +0.024]
+scores_27b_transfer_final.json implicit         set_stats  - peak -0.025 [-0.082, +0.030]
+scores_27b_transfer_final.json implicit         pair_max   - peak +0.024 [+0.000, +0.054] *
+scores_implicit_discussion.json implicit2_coord  set_stats  - peak -0.156 [-0.221, -0.096] *
+scores_implicit_discussion.json implicit2_coord  pair_max   - peak +0.053 [+0.018, +0.087] *
+scores_implicit_discussion.json implicit_coord   set_stats  - peak -0.119 [-0.315, +0.068]
+scores_implicit_discussion.json implicit_coord   pair_max   - peak -0.011 [-0.060, +0.042]
+scores_implicit_final.json   implicit2_coord  set_stats  - peak -0.118 [-0.163, -0.077] *
+scores_implicit_final.json   implicit2_coord  pair_max   - peak +0.023 [-0.007, +0.052]
+scores_implicit_final.json   implicit_coord   set_stats  - peak -0.166 [-0.278, -0.065] *
+scores_implicit_final.json   implicit_coord   pair_max   - peak -0.003 [-0.041, +0.025]

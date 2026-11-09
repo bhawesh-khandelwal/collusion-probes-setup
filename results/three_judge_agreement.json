@@ -1,0 +1,40 @@
+{
+ "n_runs": 180,
+ "yes_rate": {
+  "gemma": 41,
+  "glm": 27,
+  "deepseek": 24
+ },
+ "pairwise": {
+  "gemma-glm": {
+   "agree": 0.922,
+   "kappa": 0.749
+  },
+  "gemma-deepseek": {
+   "agree": 0.906,
+   "kappa": 0.686
+  },
+  "glm-deepseek": {
+   "agree": 0.961,
+   "kappa": 0.84
+  }
+ },
+ "vs_consensus": {
+  "n": 166,
+  "agree": 0.97,
+  "kappa": 0.881,
+  "consensus_yes_confirmed": "22/27",
+  "consensus_no_confirmed": "139/139"
+ },
+ "splits": {
+  "n": 14,
+  "sides_with_gemma": 2,
+  "sides_with_glm": 12
+ },
+ "three_judge": {
+  "unanimous": 161,
+  "unanimous_yes": 22,
+  "majority_yes": 29,
+  "consensus_label_flips_under_majority": 0
+ }
+}

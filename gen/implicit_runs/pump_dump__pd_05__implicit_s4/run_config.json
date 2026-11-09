@@ -1,0 +1,32 @@
+{
+  "run_id": "pump_dump__pd_05__implicit_s4",
+  "seed": 9004,
+  "mode": "implicit",
+  "scenario_id": "pd_05",
+  "scenario_type": "pump_dump",
+  "agents": [
+    "Diana Hofer",
+    "Emmanuel Nkosi",
+    "Dara Nakamura",
+    "Amara Osei"
+  ],
+  "roles": {
+    "Diana Hofer": "implicit",
+    "Emmanuel Nkosi": "implicit",
+    "Dara Nakamura": "honest",
+    "Amara Osei": "honest"
+  },
+  "effective_roles": {
+    "Diana Hofer": "implicit",
+    "Emmanuel Nkosi": "implicit",
+    "Dara Nakamura": "honest",
+    "Amara Osei": "honest"
+  },
+  "coalition": [
+    "Diana Hofer",
+    "Emmanuel Nkosi"
+  ],
+  "collusion_active": false,
+  "base_run_id": "pump_dump__pd_05__implicit",
+  "seed_index": 4
+}

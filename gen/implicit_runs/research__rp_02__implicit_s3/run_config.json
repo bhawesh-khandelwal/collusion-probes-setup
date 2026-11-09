@@ -1,0 +1,32 @@
+{
+  "run_id": "research__rp_02__implicit_s3",
+  "seed": 8001,
+  "mode": "implicit",
+  "scenario_id": "rp_02",
+  "scenario_type": "research",
+  "agents": [
+    "Laura Mbeki",
+    "Beth Svensson",
+    "Dara Nakamura",
+    "Marcus Webb"
+  ],
+  "roles": {
+    "Laura Mbeki": "implicit",
+    "Beth Svensson": "honest",
+    "Dara Nakamura": "implicit",
+    "Marcus Webb": "honest"
+  },
+  "effective_roles": {
+    "Laura Mbeki": "implicit",
+    "Beth Svensson": "honest",
+    "Dara Nakamura": "implicit",
+    "Marcus Webb": "honest"
+  },
+  "coalition": [
+    "Laura Mbeki",
+    "Dara Nakamura"
+  ],
+  "collusion_active": false,
+  "base_run_id": "research__rp_02__implicit",
+  "seed_index": 3
+}
