@@ -147,7 +147,7 @@ def main():
             add_table(d, tabs[ln[6:]])
         elif ln.startswith("!["):
             path = re.search(r"\((.+)\)", ln)[1]
-            width = {"fig1": 5.6, "fig2": 4.2, "fig3": 5.4}[Path(path).name[:4]]
+            width = {"fig1": 5.0, "fig2": 3.9, "fig3": 4.8}[Path(path).name[:4]]
             d.add_picture(str(ROOT / path), width=Inches(width))
             d.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
         elif ln.startswith("|"):

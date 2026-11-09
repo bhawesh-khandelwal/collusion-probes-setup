@@ -21,6 +21,8 @@ Code, data and results for an Apart Swarm Alignment Sprint submission (Track 4, 
 | `extract/` | Activation extraction with MLX (NARCBench format) and derived test tiers |
 | `group-detector/` | Group detectors and evaluation (`group_eval_v1.py`), relational and receiver tests, in-domain CV, monitor evaluation, group-minus-Peak comparisons |
 | `review/three_judge_agreement.py` | Agreement between the three judges |
+| `group-detector/private_read.py` | Same-setup runs read at the private-channel turns, with a TF-IDF text baseline |
+| `review/make_label_sheet.py`, `review/score_label_sheet.py` | Blind 60-run human label sheet and its scorer |
 | `results/`, `group-detector/results/` | Saved result JSON, logs and notes |
 | `report/` | Report source (`REPORT.md`), figures (`make_figures.py`), tables, and the template build script |
 
@@ -29,7 +31,7 @@ Code, data and results for an Apart Swarm Alignment Sprint submission (Track 4, 
 1. Clone [NARCBench](https://github.com/aaronrose227/narcbench) and download its data; the scripts expect it at `~/projects/open-source/narcbench`.
 2. Put an API key for the hosted models in `.env` as `ADAPTION_API_KEY=...` (only needed for generation, judging and the text monitor).
 3. Extract activations: `python -I extract/extract_mlx.py ...` (needs Apple silicon and the 4-bit MLX models; see the docstring), then `extract/make_tiers.py`.
-4. Evaluate: `run_wp4.sh` (Qwen) and the commands in each script's docstring; `group-detector/vs_peak.py`, `indomain_cv.py`, `monitor_eval.py`, `receiver_test.py`, `relational_test.py`.
+4. Evaluate: `run_wp4.sh` (Qwen) and the commands in each script's docstring; `group-detector/vs_peak.py`, `indomain_cv.py`, `monitor_eval.py`, `receiver_test.py`, `relational_test.py`, `private_read.py` (after `extract_mlx.py --phases private`).
 5. Figures and tables: `python -I report/make_figures.py`.
 
 Activations (about 2.4 GB) and model weights are not in the repo.

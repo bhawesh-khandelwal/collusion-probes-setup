@@ -48,22 +48,24 @@ def narcbench_samples(tier_dir, phases=("discussion", "final")):
         finals = res.get("final_texts", {})
         pi = qi = 0
         for e in prompts:
-            if e["phase"] == "discussion" and e["channel"] == "private":
+            phase = e["phase"]
+            if e["channel"] == "private":
+                response = priv[qi] if qi < len(priv) else ""
                 qi += 1
-                continue
-            if e["phase"] == "discussion" and e["channel"] == "public":
+                phase = "private"
+            elif e["phase"] == "discussion" and e["channel"] == "public":
                 response = pub[pi] if pi < len(pub) else ""
                 pi += 1
             elif e["phase"] == "final":
                 response = finals.get(e["agent_name"], "")
             else:
                 continue
-            if e["phase"] not in phases:
+            if phase not in phases:
                 continue
             samples.append(dict(
                 meta=dict(run_id=cfg["run_id"], mode=cfg["mode"], role=e["role"], channel=e["channel"],
                           run_agents=sorted(cfg.get("agents", [])),
-                          phase=e["phase"], round=e["round"], agent_name=e["agent_name"],
+                          phase=phase, round=e["round"], agent_name=e["agent_name"],
                           scenario_id=cfg.get("scenario_id"),
                           scenario_domain=cfg.get("scenario_domain", cfg.get("scenario_type"))),
                 system=e["system_prompt"], user=e["user_prompt"], response=response))

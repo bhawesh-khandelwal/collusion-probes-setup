@@ -14,3 +14,5 @@ review/human_check_key.json
 review/extend_human_check.py
 review/score_human_check.py
 .DS_Store
+review/label_sheet.md
+review/label_sheet_key.json
